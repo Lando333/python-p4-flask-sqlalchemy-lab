@@ -59,7 +59,7 @@ def zookeeper_by_id(id):
 
     else:
         for animal in animals:
-            response_body += f'<ul>Has {animal.species} named {animal.name}.</ul>'
+            response_body += f'<ul>Animal: {animal.name}</ul>'
 
     response = make_response(response_body, 200)
 
@@ -87,7 +87,7 @@ def enclosure_by_id(id):
 
     else:
         for animal in animals:
-            response_body += f'<ul>Has {animal.species} named {animal.name}.</ul>'
+            response_body += f'<ul>Animal: {animal.name}</ul>'
 
     response = make_response(response_body, 200)
 
